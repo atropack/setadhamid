@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup
 import telegram
 import os
 
-TELEGRAM_TOKEN = os.getenv("7850841863:AAFLaoKxUhylBr7q5J8F_lIMg0JHF9gIOuQ
-")
-CHANNEL_ID = os.getenv("SETADHAMID")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 def send_to_telegram(tenders):
     bot = telegram.Bot(token=TELEGRAM_TOKEN)
